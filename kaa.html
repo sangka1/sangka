@@ -1,0 +1,190 @@
+
+<!DOCTYPE html>
+<html>
+  <!-- Yang recode gapunya otak 
+     Author : Sangka
+  -->
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title> Alexa Was Here </title>
+  <style>
+  @import url('https://fonts.googleapis.com/css2?family=Rubik+Glitch&display=swap');  
+      body {
+        padding : 0;
+        margin : 0;
+        background : black;
+      }
+      h1 {
+        font-size : 25px;
+        color : white;
+        font-family: 'Imbue', serif;
+        animation : animasi 0.2s infinite;
+        animation-direction : alternate;
+      }
+         @keyframes animasi {
+           10% { -webkit-text-stroke : 0.5px black;}
+           
+           20% {
+             -webkit-text-stroke : 0.5px black;
+             transform : translateY(5%);
+           }
+          
+           45% {
+             -webkit-text-stroke : 0.5px black;
+             transform : translate(-0.3%);
+           }
+        
+           90% {
+             -webkit-text-stroke : 0.5px black;
+             transform : rotate(0.2deg);
+           }
+         }
+       p{
+         margin-top : 25%;
+       }
+       img {
+         width : 50%;
+         height : 20%;
+         border-radius : 2px;
+         margin-top : 20%;
+       }
+       #hapus {
+         background : transparent;
+         width : 200px;
+         height : 150px;
+         padding : 5px;
+         animation : animasigambar 1s linear infinite;
+         animation-direction : alternate;
+       }
+         @keyframes animasigambar {
+           0% {
+             transform : translateY(5%);
+           }
+           50% {
+             transform : translateY(0%);
+           }
+           100% {
+             transform : translateY(-5%);
+           }
+         }
+       #quot {
+         text-align : center;
+         font-family : courier;
+         font-weight : bold;
+         margin-top : 10px;
+         font-size : 13px;
+         width : 90%;
+         display : none;
+       }
+       #buttons {
+          background : transparent;
+          color : lime;
+          width : 100px;
+          height : 50px;
+          font-size : 20px;
+          border : solid 1px lime;
+          box-shadow : 0 0 5px lime , 0 0 10px lime;
+          border-radius : 10px;
+          margin-top : 30%;
+          transition : 0.3s;
+       }
+       #buttons:hover {
+         background : green;
+         color : black;
+       }
+       #ganti {
+         display : none;
+       }
+       #video-pertama {
+         position : absolute;
+         right : 0;
+         bottom : 0;
+         opacity : 0.5;
+         z-index : -1;
+       }
+       #videos {
+         position : absolute;
+         right : 0;
+         bottom : 0;
+         display : none;
+         opacity : 0.5;
+         z-index : 1;
+       }
+  </style>
+</head>
+<body id = "open">
+  <p></p>
+  <center>
+    <h1> -= Hacked By <font color = "red">[アレクサ]</font>=-</h1>
+  </center>
+  <center>
+    <img src = "https://c.top4top.io/p_269577ojw0.png" id = "hapus">
+    <img src = "https://upload.wikimedia.org/wikipedia/commons/thumb/7/73/Bravo_Five_Clown_Glitch.gif/600px-Bravo_Five_Clown_Glitch.gif" id = "ganti">
+  </center>
+  <center>
+   <div id = "quot">
+    Alexa disini ,Anda telah di heker!!! ,Sekian Dan Terimakasih.
+   </div>
+  </center>
+  <center>
+    <video id = "video-pertama" autoplay loop muted>
+      <source src = "https://e.top4top.io/m_2695e27lp0.mp4" target = "_blank">
+    </video>
+    <audio id = "audios">
+      <source src = "https://a.top4top.io/m_26957lx3d0.mp3" type = "audio/mpeg">
+    </audio>
+    <!-- Bisa di ubah dengan videomu dengan ukuran tampilan android -->
+    <div class = "content">
+      <video id = "videos" loop muted>
+        <source src = "https://l.top4top.io/m_2695hzifk0.mp4" target = "_blank">
+      </video>
+    </div>
+    <br>
+    <button id = "buttons"> Touch Me </button>
+  </center>
+  <script>
+     var hapus = document.getElementById("hapus")
+     var ganti = document.getElementById("ganti")
+     var bg = document.getElementById("open");
+     var audio = document.getElementById("audios")
+     var buttons = document.getElementById("buttons");
+     var quot = document.getElementById("quot");
+     var videos = document.getElementById("videos")
+     var v_pertama = document.getElementById("video-pertama")
+     buttons.addEventListener("click", () => {
+       bg.style.background = "black"
+       bg.style.transition = "2s"
+       quot.style.color = "white"
+       buttons.style.display = "none"
+       ganti.style.display = "block"
+       ganti.style.transition = "0.3s"
+       hapus.style.display = "none"
+       quot.style.display = "block"
+       videos.style.display = "block"
+       v_pertama.style.display = "none"
+       setTimeout(function() {
+         videos.play()
+         audio.play()
+       }, 1000);
+     })
+     /*document.getElementById("buttons").addEventListener("click", gas);
+     function gas() {
+       audio.play();
+       bg.style.background = "black"
+       bg.style.transition = "2s"
+       quot.style.color = "white"
+       buttons.style.display = "none"
+       ganti.style.display = "block"
+       ganti.style.transition = "0.3s"
+       hapus.style.display = "none"
+       quot.style.display = "block"
+       videos.style.display = "block"
+       videos.play()
+       v_pertama.style.display = "none"
+     }
+     */
+  </script>
+</body>
+
+</html>
